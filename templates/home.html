@@ -1,0 +1,45 @@
+<title>Home | yoezequiel</title>
+{% extends "layout.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+<div>
+    <div class="jumbotron">
+        <h1 class="display-4">yoezequiel</h1>
+        <p class="lead">hello welcome to my portfolio</p>
+    </div>
+    
+
+    <div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://techgeek-yo.blogspot.com/"><img src="{{ url_for('static', filename='Img/blog.jpeg') }}" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://techgeek-yo.blogspot.com/"><h5 class="card-title">Blog</h5></a>
+                        <p class="card-text">This is my blog, in which I upload tutorials, and more things</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://www.youtube.com/channel/UCy_fFUGdAWjHsIHvxGQDS7A"><img src="{{ url_for('static', filename='Img/youtube.jpg') }}" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://www.youtube.com/channel/UCy_fFUGdAWjHsIHvxGQDS7A"><h5 class="card-title">YouTube</h5></a>
+                        <p class="card-text">This is my youtube channel where I upload programming content</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <a href="https://github.com/yoezequiel"><img src="{{ url_for('static', filename='Img/github.png') }}" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <a href="https://github.com/yoezequiel"><h5 class="card-title">GitHub</h5></a>
+                        <p class="card-text">this is my github</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
