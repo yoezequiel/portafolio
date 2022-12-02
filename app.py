@@ -23,4 +23,4 @@ def no_encontrada(error):
 
 if __name__ == '__main__':
     app.register_error_handler(404, no_encontrada)
-    app.run(debug=True)
+    app.run()
